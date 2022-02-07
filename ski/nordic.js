@@ -4,10 +4,10 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 9.25,
-      center: { lat: 49.673017, lng: -57.736697}, 
+      center: { lat: 43.874721303468206, lng: -79.73041974777321}, 
       mapTypeId: "terrain"
     });
-// Fill in lat/long and location names of each trail head
+// Fill in lat/long and location names, URL of ski locations
 
   const tourStops = [
     [{ lat: 49.5661, lng: -57.832231}, "Gros Morne Mountain Hiking Trail"],
