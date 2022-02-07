@@ -5,12 +5,7 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 9.25,
       center: { lat: 49.673017, lng: -57.736697}, 
-// Change style of base map to highlight park boundary and stylize map
-      styles: [
-        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-      ],
-    }); 
+
 // Fill in lat/long and location names of each trail head
 
   const tourStops = [
