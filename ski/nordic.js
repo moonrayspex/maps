@@ -5,6 +5,7 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 9.25,
       center: { lat: 49.673017, lng: -57.736697}, 
+      mapTypeId: "terrain"
     });
 // Fill in lat/long and location names of each trail head
 
