@@ -7,7 +7,6 @@ function initMap() {
       center: { lat: 49.673017, lng: -57.736697}, 
 // Change style of base map to highlight park boundary and stylize map
       styles: [
-        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
       ],
