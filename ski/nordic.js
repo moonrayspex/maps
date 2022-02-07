@@ -3,7 +3,7 @@
 // Use function to create map 
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8.25,
+      zoom: 9,
       center: { lat: 43.874721303468206, lng: -79.73041974777321}, 
       mapTypeId: "terrain"
     });
