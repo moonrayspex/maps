@@ -1,1 +1,73 @@
 
+<!DOCTYPE html>
+<html>
+    <!--Adapted from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-html-->
+    <!-- Deleted JSON and retry this page -->
+  <head>
+    <title>Walking Tour of Lübeck</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <script src="nordic.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+        height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+        /*Adapted from : https://developers.google.com/maps/documentation/javascript/examples/directions-travel-modes#maps_directions_travel_modes-css*/
+        #floating-panel {
+          position: absolute;
+          top: 10px;
+          left: 65%;
+          z-index: 6;
+          background-color: rgba(255, 255, 255, 0.514);
+          padding: 5px;
+          border: 1px solid #999;
+          text-align: center;
+          font-family: "Roboto", "sans-serif";
+          line-height: 30px;
+          padding-left: 10px;
+        }
+         #title {
+          position: absolute;
+          top: 10px;
+          left: 25%;
+          z-index: 5;
+          background-color: rgba(255, 255, 255, 0.514);
+          padding: 5px;
+          border: 1px solid rgba(153, 153, 153, 0);
+          text-align: center;
+          font-family: "Roboto", "sans-serif";
+          line-height: 30px;
+          padding-left: 10px;
+        }
+    </style>
+
+  </head>
+  <body> <!--adapted from: https://developers.google.com/maps/documentation/javascript/examples/directions-travel-modes#maps_directions_travel_modes-html-->
+
+      <div id="floating-panel">
+        <b>Mode of Travel: </b>
+        <select id="mode">
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+        </select>
+        </div>
+        <div id="title">
+         <h2>Walking Tour of Lübeck, Germany</h2>
+        </div> 
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap"
+      defer>
+    </script>
+  </body>
+</html>
